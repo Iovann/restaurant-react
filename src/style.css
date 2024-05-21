@@ -18,3 +18,17 @@
     border-style: solid;
     border-color: white white transparent transparent;
 }
+
+.custom-prev-button-icon{
+  color: black;
+  font-weight: bolder;
+}
+
+.vert{
+  background-color: #32CD32;
+}
+
+.coeur{
+  border-radius: 0 50% 0 50% !important;
+  margin-right: -1%;
+}

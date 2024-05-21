@@ -1,9 +1,14 @@
 import React from 'react'
-
+import '../style.css'
 const Food = ( {image, name, price}) => {
     return (
         <>
-            <div className=" bg-white card rounded-5 border-0  p-4 shadow-lg">
+            <div className=" bg-white card rounded-5 border-0 px-3 shadow-lg">
+                <div className="row justify-content-end">
+                    <div className="col-2 vert p-3 coeur">
+                        <img src="./assets/coeur.svg" className='' alt="" />
+                    </div>
+                </div>
                 <div className="row justify-content-center ">
                     <span className="col-8">
                         <img src={image} alt="" className='img-fluid rounded-circle px-2 py-3'/>
