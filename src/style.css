@@ -14,9 +14,9 @@
 .arrow-box {
     position: relative;
     margin: 20px;
-  }
+}
   
-  .arrow-box::after {
+.arrow-box::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -25,4 +25,4 @@
     border-width: 10px;
     border-style: solid;
     border-color: white white transparent transparent;
-  }
+}

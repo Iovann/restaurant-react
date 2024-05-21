@@ -3,10 +3,7 @@ function Navbar() {
       <>
         <nav className="navbar navbar-expand-lg bg-body-tertiary mt-3">
           <div className="container">
-            <span className="navbar-brand d-flex align-items-center " href="#">
-              <span className='text-white fw-bolder fs-1 rounded-3 px-2 py-0' style={{ backgroundColor: '#32CD32' }}>F</span>
-              <img src="./assets/oodi.svg" className='img-fluid' alt="" />
-            </span>
+            <span className="navbar-brand" href="#"><img src="./assets/logo.svg" alt="" /></span>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
