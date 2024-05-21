@@ -9,7 +9,7 @@ export default function ResponsiveDemo() {
     const responsiveOptions = [
         {
             breakpoint: '1400px',
-            numVisible: 2,
+            numVisible: 3,
             numScroll: 1
         },
         {
@@ -51,8 +51,6 @@ export default function ResponsiveDemo() {
 
     return (
         <div className="py-5">
-            <img src="./assets/left-arrow.svg" className='p-4 mx-3 rounded-circle bg-secondary-subtle' alt=""/>
-            <img src="./assets/right_arrow.svg" className='p-4 mx-3  rounded-circle' style={{ backgroundColor: "#32CD32" }} alt=""/>
             <Carousel
                 ref={carouselRef}
                 value={products}

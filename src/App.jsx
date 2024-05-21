@@ -25,14 +25,14 @@ function App() {
         </div>
         <p className='text-danger text-uppercase fw-bold pt-5'>Special Dishes</p>
 
-        <div className="row justify-content-between">
-          <div className="col-lg-5 justify-content-between ">
+        <div className="row justify-content-lg-between justify-content-center">
+          <div className="col-lg-5 justify-content-center  justify-lg-content-between ">
             <p className='display-4 fw-bold'>Standout Dishes From Our Menu</p>
           </div>
 
           <div className="col-lg-2  justify-content-between">
-            <img src="./assets/left-arrow.svg" className='p-4 mx-3 rounded-circle bg-secondary-subtle' alt="" />
-            <img src="./assets/right_arrow.svg" className='p-4 mx-3  rounded-circle' style={{ backgroundColor: "#32CD32" }} alt="" />
+            {/* <img src="./assets/left-arrow.svg" className='p-4 mx-3 rounded-circle bg-secondary-subtle' alt="" />
+            <img src="./assets/right_arrow.svg" className='p-4 mx-3  rounded-circle' style={{ backgroundColor: "#32CD32" }} alt="" /> */}
           </div>
         </div>
       </div>
@@ -59,16 +59,20 @@ function App() {
 
             <div className="row">
               <div className="col-lg-3">
-                <AvatarGroup>
-                  <Avatar image="./assets/avatar1.svg" size="xlarge" shape="circle" />
-                  <Avatar image="./assets/avatar2.svg" size="xlarge" shape="circle" />
-                  <Avatar image="./assets/avatar3.svg" size="xlarge" shape="circle" />
-                </AvatarGroup>
+                <div className="row mb-4">
+                  <AvatarGroup>
+                    <Avatar image="./assets/avatar1.svg" size="xlarge" shape="circle" />
+                    <Avatar image="./assets/avatar2.svg" size="xlarge" shape="circle" />
+                    <Avatar image="./assets/avatar3.svg" size="xlarge" shape="circle" />
+                  </AvatarGroup>
+                </div>
               </div>
 
-              <div className="col-lg-6 fs-5">
-                <p className='fw-bold mb-2'>Customer Feedback</p>
-                <p><img src="./assets/star.svg" alt="" className='me-2' /> <span className='fw-bold'>4.9</span> <span className='text-secondary'>(18.6k Reviews)</span></p>
+              <div className="col-lg-6 fs-5 mb-3 ">
+                <div className="row justify-content-center">
+                  <p className='fw-bold mb-2'>Customer Feedback</p>
+                  <p><img src="./assets/star.svg" alt="" className='me-2' /> <span className='fw-bold'>4.9</span> <span className='text-secondary'>(18.6k Reviews)</span></p>
+                </div>
               </div>
             </div>
           </div>
@@ -98,7 +102,7 @@ function App() {
       </div>
 
 
-      <Footer/>  
+      <Footer />
     </>
   )
 }

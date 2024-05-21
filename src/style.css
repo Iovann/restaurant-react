@@ -38,3 +38,9 @@
 .scale{
   transform: scale(2) !important;
 }
+
+
+.p-avatar-group{
+  display: flex;
+  justify-content: center;
+}
