@@ -83,7 +83,7 @@ function App() {
         <div className="row justify-content-between">
 
           <div className="col-lg-6 text-center text-lg-start ">
-            <p className='text-danger text-uppercase fw-bold pt-5'>Our Story & Services</p>
+            <p className='text-danger text-uppercase fw-bold pt-2 pt-lg-5'>Our Story & Services</p>
             <p className='display-4 fw-bolder'>Our Culinary Journey And Services</p>
             <p className='text-secondary fs-5'>Rooted in passion, we curate unforgettable dining experiences and offer exceptional services, blending culinary artistry with warm hospitality.</p>
             <Bouton text='Explore' bg="#32CD32" color="#fff" />

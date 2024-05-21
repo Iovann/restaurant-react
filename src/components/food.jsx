@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../style.css';
 
-const Food = ({ image, name, price }) => {
+const Food = ({ image, name, price, star }) => {
     const [like, setLike] = useState(false);
 
     const changelike = () => {
@@ -25,7 +25,7 @@ const Food = ({ image, name, price }) => {
                     <p className='fs-4 text-secondary'>Description of the item</p>
                     <div className='d-flex justify-content-between fs-5 fw-bold'>
                         <p><span className='text-danger fw-bold'>$ </span> {price}</p>
-                        <p><img src="./assets/star.svg" className='mx-2' alt="star" /> 4.9</p>
+                        <p><img src="./assets/star.svg" className='mx-2' alt="star" /> {star}</p>
                     </div>
                 </div>
             </div>

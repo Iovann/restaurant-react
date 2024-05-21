@@ -31,12 +31,15 @@ export default function ResponsiveDemo() {
 
     useEffect(() => {
         const mockData = [
-            { image: './assets/Fattoush salad.svg', name: 'Fattoush salad', price: 24.00 },
-            { image: './assets/Fattoush salad.svg', name: 'Fattoush salad', price: 24.00 },
-            { image: './assets/Fattoush salad.svg', name: 'Fattoush salad', price: 24.00 },
-            { image: './assets/Fattoush salad.svg', name: 'Fattoush salad', price: 24.00 },
-            { image: './assets/Fattoush salad.svg', name: 'Fattoush salad', price: 24.00 },
-            { image: './assets/Fattoush salad.svg', name: 'Fattoush salad', price: 24.00 },
+            { image: './assets/Fattoush salad.svg', name: 'Fattoush salad', price: "24.00", star:"4.9" },
+            { image: './assets/Vegetable salad.svg', name: 'Vegetable salad', price: "26.00", star:"4.6" },
+            { image: './assets/Egg salad.svg', name: 'Vegetable salad', price: "23.00" , star:"4.5"},
+            { image: './assets/Fattoush salad.svg', name: 'Fattoush salad', price: "24.00", star:"4.9" },
+            { image: './assets/Vegetable salad.svg', name: 'Vegetable salad', price: "26.00" , star:"4.6"},
+            { image: './assets/Egg salad.svg', name: 'Vegetable salad', price: "23.00", star:"4.5" },
+            { image: './assets/Fattoush salad.svg', name: 'Fattoush salad', price: "24.00", star:"4.9" },
+            { image: './assets/Vegetable salad.svg', name: 'Vegetable salad', price: "26.00", star:"4.6" },
+            { image: './assets/Egg salad.svg', name: 'Vegetable salad', price: "23.00", star:"4.5" },
         ];
         setProducts(mockData.slice(0, 9));
     }, []);
@@ -44,7 +47,7 @@ export default function ResponsiveDemo() {
     const productTemplate = (product) => {
         return (
             <div className="m-2 text-center py-3 px-3">
-                <Food image={product.image} name={product.name} price={product.price} />
+                <Food image={product.image} name={product.name} price={product.price} star={product.star} />
             </div>
         );
     };
