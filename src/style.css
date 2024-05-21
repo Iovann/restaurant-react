@@ -1,0 +1,28 @@
+.bg-vert{
+    background-image: url('./assets/rond_vert.svg') !important;
+    background-clip: border-box;
+    background-size: 88%;
+    background-repeat: no-repeat;
+    background-position:bottom;
+}
+
+.first{
+    margin-top: 40%;
+    background-color: white !important;
+}
+
+.arrow-box {
+    position: relative;
+    margin: 20px;
+  }
+  
+  .arrow-box::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 90%;
+    transform: translateX(-20%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: white white transparent transparent;
+  }
