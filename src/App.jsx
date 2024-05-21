@@ -2,6 +2,10 @@ import Navbar from './components/navbar'
 import Hero from './components/hero'
 import Card_vert from './components/card_vert'
 import ResponsiveDemo from './components/caroussel'
+import './style.css'
+import { Avatar } from 'primereact/avatar';
+import { AvatarGroup } from 'primereact/avatargroup';
+import Bouton from "./components/bouton"
 
 function App() {
   return (
@@ -36,6 +40,55 @@ function App() {
           <ResponsiveDemo />
         </div>
       </div>
+
+      <div className="container py-5">
+        <div className="row justify-content-between ">
+          <div className="col-lg-4 position-relative ">
+            <span className='position-absolute scale' style={{ top: "60%" }}>😋</span>
+            <span className='position-absolute scale' style={{ top: "60%", left: "90%" }}>🍕</span>
+            <img src="./assets/group2.svg" className='img-fluid' alt="" />
+          </div>
+
+          <div className="col-lg-6 text-center text-lg-start ">
+            <p className='text-danger text-uppercase fw-bold pt-5'>Testimonials</p>
+            <p className='display-4 fw-bolder'>What Our Customers Say About Us</p>
+
+            <p className='text-secondary fs-5'>“I had the pleasure of dining at Foodi last night, and I'm still raving about the experience! The attention to detail in presentation and service was impeccable”</p>
+
+            <div className="row">
+              <div className="col-lg-3">
+                <AvatarGroup>
+                  <Avatar image="./assets/avatar1.svg" size="xlarge" shape="circle" />
+                  <Avatar image="./assets/avatar2.svg" size="xlarge" shape="circle" />
+                  <Avatar image="./assets/avatar3.svg" size="xlarge" shape="circle" />
+                </AvatarGroup>
+              </div>
+
+              <div className="col-lg-6 fs-5">
+                <p className='fw-bold mb-2'>Customer Feedback</p>
+                <p><img src="./assets/star.svg" alt="" className='me-2' /> <span className='fw-bold'>4.9</span> <span className='text-secondary'>(18.6k Reviews)</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container my-5">
+        <div className="row">
+          <div className="col-lg-6 text-center text-lg-start ">
+            <p className='text-danger text-uppercase fw-bold pt-5'>Our Story & Services</p>
+            <p className='display-4 fw-bolder'>Our Culinary Journey And Services</p>
+            <p className='text-secondary fs-5'>Rooted in passion, we curate unforgettable dining experiences and offer exceptional services, blending culinary artistry with warm hospitality.</p>
+            <Bouton text='Explore' bg="#32CD32" color="#fff" />
+          </div>
+
+          <div className="col-lg-6">
+            
+          </div>
+        </div>
+      </div>
+
+
     </>
   )
 }

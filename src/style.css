@@ -32,3 +32,6 @@
   border-radius: 0 50% 0 50% !important;
   margin-right: -1%;
 }
+.scale{
+  transform: scale(2) !important;
+}

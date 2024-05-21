@@ -50,8 +50,9 @@ export default function ResponsiveDemo() {
     };
 
     return (
-        <div className="card">
-
+        <div className="py-5">
+            <img src="./assets/left-arrow.svg" className='p-4 mx-3 rounded-circle bg-secondary-subtle' alt=""/>
+            <img src="./assets/right_arrow.svg" className='p-4 mx-3  rounded-circle' style={{ backgroundColor: "#32CD32" }} alt=""/>
             <Carousel
                 ref={carouselRef}
                 value={products}
