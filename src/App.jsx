@@ -1,11 +1,13 @@
 import Navbar from './components/navbar'
 import Hero from './components/hero'
 import Card_vert from './components/card_vert'
+import Card_green from './components/card_green'
 import ResponsiveDemo from './components/caroussel'
 import './style.css'
 import { Avatar } from 'primereact/avatar';
 import { AvatarGroup } from 'primereact/avatargroup';
 import Bouton from "./components/bouton"
+import Footer from './components/footer'
 
 function App() {
   return (
@@ -73,8 +75,9 @@ function App() {
         </div>
       </div>
 
-      <div className="container my-5">
-        <div className="row">
+      <div className="container py-5">
+        <div className="row justify-content-between">
+
           <div className="col-lg-6 text-center text-lg-start ">
             <p className='text-danger text-uppercase fw-bold pt-5'>Our Story & Services</p>
             <p className='display-4 fw-bolder'>Our Culinary Journey And Services</p>
@@ -83,12 +86,19 @@ function App() {
           </div>
 
           <div className="col-lg-6">
-            
+            <div className="row justify-content-evenly">
+              <Card_green img='./assets/gatering.svg' title={'Catering'} description={'Delight your guests with our flavors and  presentation'} />
+              <Card_green img='./assets/delevery.svg' title={'Fast delivery'} description={'We deliver your order promptly to your door'} />
+              <Card_green img='./assets/online_shop.svg' title={'Online Ordering'} description={'Explore menu & order with ease using our Online Ordering '} />
+              <Card_green img='./assets/gift.svg' title={'Gift Cards'} description={'Give the gift of exceptional dining with Foodi Gift Cards'} />
+            </div>
           </div>
+
         </div>
       </div>
 
 
+      <Footer/>  
     </>
   )
 }

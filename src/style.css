@@ -28,6 +28,9 @@
   background-color: #32CD32;
 }
 
+.color_vert{
+  color: #32CD32 !important;
+}
 .coeur{
   border-radius: 0 50% 0 50% !important;
   margin-right: -1%;
