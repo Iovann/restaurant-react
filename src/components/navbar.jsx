@@ -7,7 +7,7 @@ function Navbar() {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse justify-content-lg-around" id="navbarNavDropdown">
-              <ul className="navbar-nav fw-bold d-flex  justify-content-center">
+              <ul className="navbar-nav fw-bold d-flex justify-content-center">
                 <li className="nav-item dropdown mx-3">
                   <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style={{ color: '#32CD32', }} >Home</a>
                 </li>
